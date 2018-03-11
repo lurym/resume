@@ -1,0 +1,96 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{oldstyle}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{4cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Łukasz}{Rymko}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{\newline
+\cvitem{Personal data}{}
+Living in Gdańsk, Poland
+}
+\dateofbirth{\textbf{Birth:}~8th January 1989}
+\phone[fixed]{+48~661~489~887}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{lukasz@rymko.pl}
+\emailsecond{lurym89@gmail.com}
+
+\extrainfo{
+  \newline
+  \cvitem{Computer skills}{}
+  \textbf{Languages:} Go, Python, Java, C++, C\#
+  \newline
+  \textbf{OSes:} Linux, Windows 
+  \newline
+  \textbf{Others:} \LaTeX, vim, git, PostgreSQL
+  \newline
+  \newline
+  \cvitem{Languages}{}
+  \textbf{Polish:}~Native
+  \newline
+  \textbf{English:}~Proficient
+  \newline
+  \textbf{Russian:}~Communicative
+}
+
+\photo[90pt][0.4pt]{rymko3.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\begin{document}
+\makecvtitle
+
+I am a passionate engineer. I like to solve problems and build things. My interests are centred around building scalable web services. I am responsible for creating backend solutions that work reliably in every situation, are secure and scalable. I personally believe that you need to use right tool for the job so I like to switch between various languages and technologies. I like to write code in Golang, Python, Java or C\#. In the last year I focused my personal interests around Golang because I believe it will become most popular backend choice suitable for most projects. It's super scalable, fast and easy to use. In my spare time I build things with my RaspberryPIs or Arduino and occasionally write code that just solves my day-to-day problems. At home I try to use different languages and technologies in order to learn them all! 
+
+\section{Experience}
+\cventry{since 08.2017}{Backend developer}{FindHotel.net}{Remote}{}{I am responsible for creating Node.JS backend services based on AWS Lambda. Services depend on PostgreSQL and Redis databases. My project aggregates information about prices and availabilty for all hotels around the world. It needs to scale and work with low latencies.}
+\cventry{05.2017 - 07.2017}{Backend developer}{FoxCommerce}{Remote}{}{Project was about delivering best eCommerce experience to the customers. I was responsible for developing and maintaining backend services for eCommerce platform using technologies like Kafka, Consul, Docker and ElasticSearch. I used Go as my main language there.}
+\cventry{04.2012 - 04.2017}{Backend developer and Design Lead}{Intel Corporation}{Gdańsk}{}{I was a technical lead developer of team that is responsible for creating backend cloud services based on hardware root of trust that are supporting unique position of Intel products on the market. My duties were mostly related to security and cryptography topics but I had to have in mind scalability and performance also. My goal was to make our team easy to work with and provide productive, agile atmosphere.}
+\cventry{10.2010 - 04.2012}{Software Development Intern}{Intel Corporation}{Gdańsk}{}{}
+\cventry{01.2009 - 10.2009}{Java Software Developer}{Nethos}{Gdańsk}{}{Creating various B2E applications using Java SE, Java EE with Echo2 framework.}
+
+\section{Public repositories}
+\cventry{Go}{Vending machine}{\url{https://github.com/lurym/vending\_machine}}{}{}{Simple restful service that shows possible REST API for Vending Machine (written in Golang). It was done as a recruitment exercise for one of the companies.}
+\cventry{Node.JS}{Tricity bus}{\url{https://github.com/lurym/tricity\_bus}}{}{}{Going to work is tough sometimes. This project aggregates data from public transportation webpage and show current buses next to my home and work.}
+\cventry{Python}{Home crawler}{\url{https://bitbucket.org/lurym/home\_crawler}}{}{}{Personal project I used to find best house deal in my city. I implemented web crawler in Python that searched for best offers in Gdańsk and showed them on a Google Map with information about price, size etc.}
+\cventry{Python}{Temperature sensor}{\url{https://github.com/lurym/temperature\_sensor}}{}{}{This is a simple program that sends temperature sensors data to ThingSpeak backend service. I am using it at home for temperature monitoring.}
+\cventry{\LaTeX}{Flashcards}{\url{https://bitbucket.org/lurym/fiszki}}{}{}{This project is used to simplify creating two-sided flashcards (called fiszki in polish language) using LaTeX. My SO needed to create flashcards for her students but did not know LaTeX, so I created that project to simplify her work.}
+
+\section{Education}
+\cventry{2011 -- 2012}{Informatics}{Gdańsk University of Technology}{}{\textit{Master of Science}}{Second cycle studies on the Faculty of Electronics, Telecommunications and Informatics.}  % arguments 3 to 6 can be left empty
+\cventry{2009 -- 2010}{Mathematics}{Gdańsk University of Technology}{}{}{First cycle studies on the Faculty of Technical Physics and Applied Mathematics. Resignation at will.}
+\cventry{2007 -- 2011}{Informatics}{Gdańsk University of Technology}{}{\textit{Engineer}}{First cycle studies on the Faculty of Electronics, Telecommunications and Informatics.}
+
+\section{Master thesis}
+\cvitem{Title}{\emph{Evaluation of Feature Selection methods for Text Classification}}
+\cvitem{Supervisor}{Julian Szymański, PhD MEng}
+\cvitem{Description}{This work describes five approaches used for text features
+ selection aiming at reducing the dimensionality of the vector space model. 
+Methods are evaluated through classification task performed on the experimental high dimensional datasets
+created from Wikipedia articles database. Results of classification quality have been provided 
+for all of the methods. The best one has been used for evaluation of selection and classification scalability.}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
