@@ -5,7 +5,6 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
@@ -38,11 +37,11 @@ Living in Gdańsk, Poland
 \extrainfo{
   \newline
   \cvitem{Computer skills}{}
-  \textbf{Languages:} Go, Python, Java, C++, C\#
+  \textbf{Languages:} Go, Python, Java, Node.JS, C++, C\#
   \newline
   \textbf{OSes:} Linux, Windows 
   \newline
-  \textbf{Others:} \LaTeX, vim, git, PostgreSQL
+  \textbf{Others:} vim, git, PostgreSQL, \LaTeX
   \newline
   \newline
   \cvitem{Languages}{}
@@ -57,21 +56,21 @@ Living in Gdańsk, Poland
 \begin{document}
 \makecvtitle
 
-I am a passionate engineer. I like to solve problems and build things. My interests are centred around building scalable web services. I am responsible for creating backend solutions that work reliably in every situation, are secure and scalable. I personally believe that you need to use right tool for the job so I like to switch between various languages and technologies. I like to write code in Golang, Python, Java or C\#. In the last year I focused my personal interests around Golang because I believe it will become most popular backend choice suitable for most projects. It's super scalable, fast and easy to use. In my spare time I build things with my RaspberryPIs or Arduino and occasionally write code that just solves my day-to-day problems. At home I try to use different languages and technologies in order to learn them all! 
+I am a passionate engineer. I like to solve problems and build things. My interests are centred around building scalable web services. I am responsible for creating backend solutions that are secure, scalable and work reliably. I personally believe that you need to use right tool for the job so I like to switch between various languages and technologies. In my previous profesional experience I used to write code in Golang, Python, Java, Node.JS and C\#. In the last two years I focused my personal interests around Golang because I believe it is suitable for most backend projects and will become more and more popular in the future. While creating backend services I learned a lot about automating infrastructure management, continuous integration and delivery. I can jump into Ansible and Terraform scripts without any delay. I am mostly experienced with Amazon AWS, but Google Cloud is not new to me. In my spare time I build things with my RaspberryPIs or Arduino and occasionally write code that just solves my day-to-day problems. 
 
 \section{Experience}
-\cventry{since 08.2017}{Backend developer}{FindHotel.net}{Remote}{}{I am responsible for creating Node.JS backend services based on AWS Lambda. Services depend on PostgreSQL and Redis databases. My project aggregates information about prices and availabilty for all hotels around the world. It needs to scale and work with low latencies.}
+\cventry{since 08.2017}{Backend developer}{FindHotel.net}{Remote}{}{I am responsible for creating low latency, scalable Golang backend service. My project aggregates information about prices and availabilty for all hotels around the world. It needs to be resilient to unreliable sources of information and optimize for the best user experience.}
 \cventry{05.2017 - 07.2017}{Backend developer}{FoxCommerce}{Remote}{}{Project was about delivering best eCommerce experience to the customers. I was responsible for developing and maintaining backend services for eCommerce platform using technologies like Kafka, Consul, Docker and ElasticSearch. I used Go as my main language there.}
 \cventry{04.2012 - 04.2017}{Backend developer and Design Lead}{Intel Corporation}{Gdańsk}{}{I was a technical lead developer of team that is responsible for creating backend cloud services based on hardware root of trust that are supporting unique position of Intel products on the market. My duties were mostly related to security and cryptography topics but I had to have in mind scalability and performance also. My goal was to make our team easy to work with and provide productive, agile atmosphere.}
 \cventry{10.2010 - 04.2012}{Software Development Intern}{Intel Corporation}{Gdańsk}{}{}
 \cventry{01.2009 - 10.2009}{Java Software Developer}{Nethos}{Gdańsk}{}{Creating various B2E applications using Java SE, Java EE with Echo2 framework.}
 
 \section{Public repositories}
-\cventry{Go}{Vending machine}{\url{https://github.com/lurym/vending\_machine}}{}{}{Simple restful service that shows possible REST API for Vending Machine (written in Golang). It was done as a recruitment exercise for one of the companies.}
 \cventry{Node.JS}{Tricity bus}{\url{https://github.com/lurym/tricity\_bus}}{}{}{Going to work is tough sometimes. This project aggregates data from public transportation webpage and show current buses next to my home and work.}
 \cventry{Python}{Home crawler}{\url{https://bitbucket.org/lurym/home\_crawler}}{}{}{Personal project I used to find best house deal in my city. I implemented web crawler in Python that searched for best offers in Gdańsk and showed them on a Google Map with information about price, size etc.}
 \cventry{Python}{Temperature sensor}{\url{https://github.com/lurym/temperature\_sensor}}{}{}{This is a simple program that sends temperature sensors data to ThingSpeak backend service. I am using it at home for temperature monitoring.}
 \cventry{\LaTeX}{Flashcards}{\url{https://bitbucket.org/lurym/fiszki}}{}{}{This project is used to simplify creating two-sided flashcards (called fiszki in polish language) using LaTeX. My SO needed to create flashcards for her students but did not know LaTeX, so I created that project to simplify her work.}
+\cventry{Go}{Vending machine}{\url{https://github.com/lurym/vending\_machine}}{}{}{Simple restful service that shows possible REST API for Vending Machine (written in Golang). It was done as a recruitment exercise for one of the companies.}
 
 \section{Education}
 \cventry{2011 -- 2012}{Informatics}{Gdańsk University of Technology}{}{\textit{Master of Science}}{Second cycle studies on the Faculty of Electronics, Telecommunications and Informatics.}  % arguments 3 to 6 can be left empty
@@ -85,7 +84,8 @@ I am a passionate engineer. I like to solve problems and build things. My intere
  selection aiming at reducing the dimensionality of the vector space model. 
 Methods are evaluated through classification task performed on the experimental high dimensional datasets
 created from Wikipedia articles database. Results of classification quality have been provided 
-for all of the methods. The best one has been used for evaluation of selection and classification scalability.}
+for all of the methods. The best one has been used for evaluation of selection and classification scalability. 
+My thesis article was published in Lecture Notes in Computer Science (LNCS) book: \url{https://link.springer.com/chapter/10.1007/978-3-642-38610-7_44}}
 
 \nocite{*}
 \bibliographystyle{plain}
