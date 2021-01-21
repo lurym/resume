@@ -10,7 +10,9 @@
 % moderncv themes
 \moderncvstyle{oldstyle}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{graphicx,txfonts}
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\newcommand{\heart}{\ensuremath\varheartsuit}
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
@@ -37,11 +39,25 @@ Living in Gdańsk, Poland
 \extrainfo{
   \newline
   \cvitem{Computer skills}{}
-  \textbf{Languages:} Go, Python, Java, Node.JS, C++, C\#
+  \textbf{Languages:} 
   \newline
-  \textbf{OSes:} Linux, Windows 
+  Go, Python, Java
   \newline
-  \textbf{Others:} vim, git, PostgreSQL, \LaTeX
+  \textbf{Cloud Providers:} 
+  \newline
+AWS, GCP
+  \newline
+  \textbf{IaaS:} 
+  \newline
+Terraform, Ansible
+  \newline
+  \textbf{Data storages:} 
+  \newline
+Redis, PostgreSQL
+  \newline
+  \textbf{Tools I \heart:} 
+  \newline
+vim, git, \LaTeX
   \newline
   \newline
   \cvitem{Languages}{}
@@ -56,10 +72,10 @@ Living in Gdańsk, Poland
 \begin{document}
 \makecvtitle
 
-I am a passionate engineer. I like to solve problems and build things. My interests are centred around building scalable web services. I am responsible for creating backend solutions that are secure, scalable and work reliably. I personally believe that you need to use right tool for the job so I like to switch between various languages and technologies. In my previous profesional experience I used to write code in Golang, Python, Java, Node.JS and C\#. In the last two years I focused my personal interests around Golang because I believe it is suitable for most backend projects and will become more and more popular in the future. While creating backend services I learned a lot about automating infrastructure management, continuous integration and delivery. I can jump into Ansible and Terraform scripts without any delay. I am mostly experienced with Amazon AWS, but Google Cloud is not new to me. In my spare time I build things with my RaspberryPIs or Arduino and occasionally write code that just solves my day-to-day problems. 
+I am a passionate engineer. I enjoy solving difficult problems and build things. My interests are centred around building scalable web services. I am responsible for creating backend solutions that are secure, scalable and work reliably. In the last four years I focused my personal interests around Golang as I finally found the right tool for the job. Previously I used to switch between different programming languages like Python, Java, Node.JS and C\#.  While creating backends I learned a lot about automating infrastructure management, continuous integration and delivery. I can jump into Ansible and Terraform scripts without any delay. I am mostly experienced with AWS, but Google Cloud is not new to me. I was technical team leader in three different projects throughout three years. I enjoy helping others and I know how to make team work well together. In my spare time I build things with my RaspberryPIs or Arduino and occasionally write code that just solves my day-to-day problems. 
 
 \section{Experience}
-\cventry{since 08.2017}{Backend developer}{FindHotel.net}{Remote}{}{I am responsible for creating low latency, horizontally scalable Golang backend service. My project aggregates information about prices and availabilty for all hotels around the world. We serve about 20 thousand requests per second with latency below 100 ms at p95. It needs to be resilient to unreliable sources of information and optimized for the best user experience. I was one of main developers in this project from the very beginning. Recently I become team leader of the whole project and I am responsible for helping engineers move project forward without frictions.}
+\cventry{since 08.2017}{Backend developer}{FindHotel.net}{Remote}{}{I am responsible for creating low latency, horizontally scalable Golang backend service. My project aggregates information about prices and availabilty for all hotels around the world. We serve about 20 thousand requests per second with latency below 100 ms at p95. It needs to be resilient to unreliable sources of information and optimized for the best user experience while maintaining low cost. I was one of main developers in this project from the very beginning. I was making crucial decisions about architecture and to this day I know the most about the project in the company. }
 \cventry{05.2017 - 07.2017}{Backend developer}{FoxCommerce}{Remote}{}{Project was about delivering best eCommerce experience to the customers. I was responsible for developing and maintaining backend services for eCommerce platform using technologies like Kafka, Consul, Docker and ElasticSearch. I used Go as my main language there.}
 \cventry{04.2012 - 04.2017}{Backend developer and Design Lead}{Intel Corporation}{Gdańsk}{}{I was a technical lead developer of team that is responsible for creating backend cloud services based on hardware root of trust that are supporting unique position of Intel products on the market. My duties were mostly related to security and cryptography topics but I had to have in mind scalability and performance also. My goal was to make our team easy to work with and provide productive, agile atmosphere.}
 \cventry{10.2010 - 04.2012}{Software Development Intern}{Intel Corporation}{Gdańsk}{}{}
